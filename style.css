@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.changelogComponent {
+  display: flex;
+  flex-direction: column;
+
+  width: 35%;
+  height: auto;
+  padding: 2rem;
+
+  border: 2px solid black;
+  border-radius: 16px;
+}
+
+.changelogHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.changelogHeader>h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 400;
+}
+
+.changelogHeader>p {
+  color: grey;
+}
+
+.changelogMap {
+  align-self: center;
+  width: 85%;
+  padding: 2rem;
+}
+
+.changelog {
+  display: flex;
+  width: auto;
+  padding: 2%;
+
+  justify-content: space-between;
+}
+
+.changelogData {
+  text-align: left;
+  width: 25%;
+}
+
+.changelogText {
+  text-align: right;
+  width: 50%;
+}
