@@ -12,11 +12,11 @@ body {
   height: 100vh;
 }
 
-.changelogComponent {
+.changelog-component {
   display: flex;
   flex-direction: column;
 
-  width: 35%;
+  width: 30%;
   height: auto;
   padding: 2rem;
 
@@ -24,7 +24,7 @@ body {
   border-radius: 16px;
 }
 
-.changelogHeader {
+.changelog-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,36 +32,80 @@ body {
   gap: 1rem;
 }
 
-.changelogHeader>h2 {
+.changelog-header>h2 {
   font-size: 48px;
   line-height: 64px;
   font-weight: 400;
 }
 
-.changelogHeader>p {
+.changelog-header>p {
   color: grey;
 }
 
-.changelogMap {
-  align-self: center;
-  width: 85%;
-  padding: 2rem;
-}
-
-.changelog {
+.changelog-items {
   display: flex;
-  width: auto;
-  padding: 2%;
+  flex-direction: column;
 
+  margin: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.item-conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
   justify-content: space-between;
+
+  width: 100%;
+  height: auto;
 }
 
-.changelogData {
+.data {
   text-align: left;
-  width: 25%;
+  width: 30%;
+  color: grey;
 }
 
-.changelogText {
+.text {
   text-align: right;
+  width: 60%;
+}
+
+.bullet-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bullet {
+  align-self: center;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.line {
+  height: 64px;
+  width: 3px;
+  background-color: black;
+}
+
+.button {
+  align-self: center;
+
   width: 50%;
+  height: 48px;
+
+  background-color: #1e1f1e;
+  color: white;
+  border-radius: 12px;
+  border-color: #1e1f1e;
 }
